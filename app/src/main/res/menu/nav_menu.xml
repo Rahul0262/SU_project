@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/media_player"
+            android:icon="@drawable/ic_mediaplayer"
+            android:title="Media Player"></item>
+        <item
+            android:id="@+id/contacts"
+            android:icon="@drawable/ic_contacts"
+            android:title="Contact"></item>
+        <item
+            android:id="@+id/scorecard"
+            android:icon="@drawable/ic_score_board"
+            android:title="ScoreCard"></item>
+    </group>
+</menu>

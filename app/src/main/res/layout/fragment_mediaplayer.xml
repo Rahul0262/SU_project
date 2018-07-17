@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EEEEEE">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="25dp"
+        android:layout_gravity="center">
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView2"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/textView2"
+            android:text="Ringtone1"
+            android:textColor="#000000"
+            android:textSize="25sp" />
+
+        <ImageButton
+            android:id="@+id/play"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView1"
+            android:layout_alignStart="@+id/textView1"
+            android:layout_below="@+id/textView1"
+            android:layout_marginTop="26dp"
+            android:background="@drawable/bbkg"
+            app:srcCompat="@drawable/ic_play_arrow"
+            tools:ignore="VectorDrawableCompat" />
+
+        <ImageButton
+            android:id="@+id/pause"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/textView2"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/bbkg"
+            app:srcCompat="@drawable/ic_pause_black"
+            tools:ignore="VectorDrawableCompat" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/play"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="102dp"
+            android:text="Ringtone 2"
+            android:textColor="#000000"
+            android:textSize="25sp" />
+
+        <ImageButton
+            android:id="@+id/play2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/play"
+            android:layout_alignStart="@+id/play"
+            android:layout_below="@+id/textView2"
+            android:layout_marginTop="28dp"
+            android:background="@drawable/bbkg"
+            app:srcCompat="@drawable/ic_play_arrow"
+            tools:ignore="VectorDrawableCompat" />
+
+        <ImageButton
+            android:id="@+id/pause2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/pause"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/pause"
+            android:background="@drawable/bbkg"
+            app:srcCompat="@drawable/ic_pause_black"
+            tools:ignore="VectorDrawableCompat" />
+
+        <ImageButton
+            android:id="@+id/stop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/textView2"
+            android:layout_alignEnd="@+id/textView1"
+            android:layout_alignRight="@+id/textView1"
+            android:background="@drawable/bbkg"
+            app:srcCompat="@drawable/ic_stop_black_24dp"
+            tools:ignore="VectorDrawableCompat" />
+
+        <ImageButton
+            android:id="@+id/stop2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/textView2"
+            android:layout_alignParentBottom="true"
+            android:layout_alignRight="@+id/textView2"
+            android:background="@drawable/bbkg"
+            app:srcCompat="@drawable/ic_stop_black_24dp"
+            tools:ignore="VectorDrawableCompat" />
+    </RelativeLayout>
+</ScrollView>
